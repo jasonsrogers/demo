@@ -1,5 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+export type Item = {
+  text: string;
+  routerLink: string;
+};
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',

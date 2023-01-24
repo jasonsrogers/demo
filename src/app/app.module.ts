@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ImagesComponent } from './images/images.component';
 import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
 import { MenuComponent } from './menu/menu.component';
-import { MenuItemComponent } from './menu-item/menu-item.component';
 import { HomeComponent } from './home/home.component';
 import { ClocksComponent } from './clocks/clocks.component';
 import { AiImagesComponent } from './ai-images/ai-images.component';
@@ -17,7 +16,6 @@ import { AiImagesComponent } from './ai-images/ai-images.component';
     ImagesComponent,
     MenuItemHexComponent,
     MenuComponent,
-    MenuItemComponent,
     HomeComponent,
     ClocksComponent,
     AiImagesComponent,

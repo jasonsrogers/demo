@@ -1,3 +1,13 @@
-<ul *ngIf="items && items.length > 0">
-  <app-menu-item *ngFor="let item of items" [item]="item"></app-menu-item>
+<ul *ngIf="items && items.length > 0" class="sidebar">
+  <li *ngFor="let item of items">
+    <a
+      [routerLink]="item.routerLink"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >{{ item.text }}</a
+    >
+  </li>
 </ul>
+
+<!-- >restart angular language server
+> typescript: restart server -->
