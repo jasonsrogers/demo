@@ -13,5 +13,6 @@ export class AppComponent {
     { text: 'Home', routerLink: 'home' },
     { text: 'Clock', routerLink: 'clocks' },
     { text: 'AI Art', routerLink: 'ai-images' },
+    { text: 'Styled components', routerLink: 'styled-components' },
   ];
 }
