@@ -4,17 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImagesComponent } from './images/images.component';
+import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
+import { HomeComponent } from './home/home.component';
+import { ClocksComponent } from './clocks/clocks.component';
+import { AiImagesComponent } from './ai-images/ai-images.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImagesComponent
+    ImagesComponent,
+    MenuItemHexComponent,
+    MenuComponent,
+    MenuItemComponent,
+    HomeComponent,
+    ClocksComponent,
+    AiImagesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
