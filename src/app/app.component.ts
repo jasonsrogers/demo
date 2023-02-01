@@ -10,9 +10,10 @@ export class AppComponent {
   title = 'demo-app';
 
   menuItems: Item[] = [
-    { text: 'Home', routerLink: 'home' },
-    { text: 'Clock', routerLink: 'clocks' },
-    { text: 'AI Art', routerLink: 'ai-images' },
-    { text: 'Styled components', routerLink: 'styled-components' },
+    { text: 'Home', routerLink: 'home-page' },
+    { text: 'Clocks', routerLink: 'clocks-page' },
+    { text: 'AI generated', routerLink: 'ai-page' },
+    { text: 'Styled components', routerLink: 'styled-components-page' },
+    { text: 'Hexagon', routerLink: 'hexagon-page' },
   ];
 }

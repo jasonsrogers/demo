@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AiImagesComponent } from './ai-images.component';
+import { AiImagesComponent } from './ai-page.component';
 
 describe('AiImagesComponent', () => {
   let component: AiImagesComponent;
@@ -8,9 +8,8 @@ describe('AiImagesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AiImagesComponent ]
-    })
-    .compileComponents();
+      declarations: [AiImagesComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(AiImagesComponent);
     component = fixture.componentInstance;

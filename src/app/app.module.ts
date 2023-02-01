@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { ImagesComponent } from './images/images.component';
 import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
 import { MenuComponent } from './menu/menu.component';
-import { HomeComponent } from './home/home.component';
-import { ClocksComponent } from './clocks/clocks.component';
-import { AiImagesComponent } from './ai-images/ai-images.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ClocksPageComponent } from './clocks-page/clocks-page.component';
+import { AiPageComponent } from './ai-page/ai-page.component';
 import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button.component';
-import { StyledComponentsComponent } from './styled-components/styled-components.component';
+import { StyledComponentsPageComponent } from './styled-components-page/styled-components-page.component';
+import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { StyledComponentsComponent } from './styled-components/styled-components
     ImagesComponent,
     MenuItemHexComponent,
     MenuComponent,
-    HomeComponent,
-    ClocksComponent,
-    AiImagesComponent,
+    HomePageComponent,
+    ClocksPageComponent,
+    AiPageComponent,
     CybertruckButtonComponent,
-    StyledComponentsComponent,
+    StyledComponentsPageComponent,
+    HexagonPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

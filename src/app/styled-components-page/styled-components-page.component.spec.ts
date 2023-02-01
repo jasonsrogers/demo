@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StyledComponentsComponent } from './styled-components.component';
+import { StyledComponentsComponent } from './styled-components-page.component';
 
 describe('StyledComponentsComponent', () => {
   let component: StyledComponentsComponent;
@@ -8,9 +8,8 @@ describe('StyledComponentsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StyledComponentsComponent ]
-    })
-    .compileComponents();
+      declarations: [StyledComponentsComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(StyledComponentsComponent);
     component = fixture.componentInstance;
