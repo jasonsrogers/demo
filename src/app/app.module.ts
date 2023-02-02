@@ -12,6 +12,8 @@ import { AiPageComponent } from './ai-page/ai-page.component';
 import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button.component';
 import { StyledComponentsPageComponent } from './styled-components-page/styled-components-page.component';
 import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
+import { CommonModule } from '@angular/common';
+import { ClockComponent } from './clock/clock.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,13 @@ import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
     MenuComponent,
     HomePageComponent,
     ClocksPageComponent,
+    ClockComponent,
     AiPageComponent,
     CybertruckButtonComponent,
     StyledComponentsPageComponent,
     HexagonPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, CommonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
