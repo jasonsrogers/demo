@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 export type Item = {
   text: string;
@@ -10,8 +10,6 @@ export type Item = {
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
-  @Input() items: any[];
-
-  ngOnInit(): void {}
+export class MenuComponent {
+  @Input() items: Item[] = [];
 }
