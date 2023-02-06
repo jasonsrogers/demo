@@ -11,7 +11,7 @@
     "lib": ["ES2022", "dom"],
     "baseUrl": "./",
     "paths": {
-      "shared/ui": ["shared/ui/src/index.ts"]
+      "@demo-app/shared/ui": ["shared/ui/src/index.ts"]
     }
   }
 }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
-import { SharedUiModule } from 'shared/ui';
+import { SharedUiModule } from '@demo-app/shared/ui';
 import { AiPageComponent } from './ai-page/ai-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';

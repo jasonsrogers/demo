@@ -2,6 +2,7 @@
   "affected": {
     "defaultBase": "main"
   },
+  "npmScope": "demo-app",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
