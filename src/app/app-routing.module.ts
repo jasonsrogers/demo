@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'ai-page', component: AiPageComponent },
   { path: 'styled-components-page', component: StyledComponentsPageComponent },
   { path: 'hexagon-page', component: HexagonPageComponent },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: 'home-page' },
 ];
 
 @NgModule({
