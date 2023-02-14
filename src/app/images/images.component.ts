@@ -10,5 +10,33 @@ export class ImagesComponent {
     { name: 'image1', url: 'assets/image1.png' },
     { name: 'image1', url: 'assets/image2.png' },
     { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+    { name: 'image1', url: 'assets/image1.png' },
+    { name: 'image1', url: 'assets/image2.png' },
+    { name: 'image1', url: 'assets/image3.png' },
+  ];
+
+  public categories = [
+    {
+      title: 'Cyber punk greek gods',
+      images: this.images,
+    },
   ];
 }

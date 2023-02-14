@@ -1,5 +1,10 @@
-<p>images works!</p>
-
-<div *ngFor="let image of images">
-  <img [src]="image.url" alt="image.name">
+<div *ngFor="let category of categories">
+  <h2>{{ category.title }}</h2>
+  <div
+    class="image-gallery-container tw-grid tw-gap-4 tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4"
+  >
+    <div class="image-tile" *ngFor="let image of category.images">
+      <img [src]="image.url" alt="image.name" />
+    </div>
+  </div>
 </div>
