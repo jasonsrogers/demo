@@ -6,7 +6,6 @@ import { SharedUiModule } from '@demo-app/shared/ui';
 import { AiPageComponent } from './ai-page/ai-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClockComponent } from './clock/clock.component';
 import { ClocksPageComponent } from './clocks-page/clocks-page.component';
 import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button.component';
 import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
@@ -22,7 +21,6 @@ import { StyledComponentsPageComponent } from './styled-components-page/styled-c
     MenuItemHexComponent,
     HomePageComponent,
     ClocksPageComponent,
-    ClockComponent,
     AiPageComponent,
     CybertruckButtonComponent,
     StyledComponentsPageComponent,

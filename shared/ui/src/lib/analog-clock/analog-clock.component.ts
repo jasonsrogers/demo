@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable, fromEvent, interval } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
+import { interval, map, startWith } from 'rxjs';
 
 export type Hand = Partial<{
   transform: string;
@@ -15,50 +14,11 @@ export const handHeights = {
 };
 
 @Component({
-  selector: 'app-clock',
-  templateUrl: './clock.component.html',
-  styles: [
-    `
-      .clock {
-        width: 300px;
-        height: 300px;
-        position: relative;
-        margin: 50px auto;
-        border-radius: 50%;
-        border: 20px solid #333;
-        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1),
-          0 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px 20px rgba(0, 0, 0, 0.1);
-      }
-      .clock-face {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        border-radius: 50%;
-        background-color: #ddd;
-      }
-      .hand {
-        width: 50%;
-        background-color: #333;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform-origin: 0 0;
-        transform: rotate(0 deg);
-        transition: all 0.05s;
-        border-radius: 6px;
-      }
-      .hour-hand {
-        width: 25%;
-        background-color: red;
-      }
-      .minute-hand {
-        width: 40%;
-        background-color: green;
-      }
-    `,
-  ],
+  selector: 'app-analog-clock',
+  templateUrl: './analog-clock.component.html',
+  styleUrls: ['./analog-clock.component.scss'],
 })
-export class ClockComponent implements OnInit {
+export class AnalogClockComponent implements OnInit {
   hourHandStyles: Hand = {};
   minuteHandStyles: Hand = {};
   secondHandStyles: Hand = {};
