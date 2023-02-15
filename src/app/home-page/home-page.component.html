@@ -10,13 +10,15 @@
 <p>It doesn't have much of a purpose for now</p>
 <p>Sections:</p>
 <ul>
-  <li><a [routerLink]="['/', 'home-page']">Home</a></li>
-  <li><a [routerLink]="['/', 'clocks-page']">Clocks</a></li>
-  <li><a [routerLink]="['/', 'ai-page']">AI generated</a></li>
-  <li>
-    <a [routerLink]="['/', 'styled-components-page']">Styled components</a>
-  </li>
-  <li><a [routerLink]="['/', 'hexagon-page']">Hexagon</a></li>
+  <a [routerLink]="['/', 'home-page']"><li>Home</li></a>
+  <a [routerLink]="['/', 'clocks-page']"><li>Clocks</li></a>
+  <a [routerLink]="['/', 'ai-page']"><li>AI generated</li></a>
+
+  <a [routerLink]="['/', 'styled-components-page']"
+    ><li>Styled components</li></a
+  >
+
+  <a [routerLink]="['/', 'hexagon-page']"><li>Hexagon</li></a>
 </ul>
 <h2>To do:</h2>
 <ul>

@@ -14,13 +14,12 @@ ul {
     border: 1px solid #777;
     border-radius: 5px;
     background-color: #999;
-    cursor: not-allowed;
-    &:has(a) {
-      &:hover {
-        background-color: #ccc;
-      }
-      background-color: #fff;
-      cursor: pointer;
+  }
+  a li {
+    &:hover {
+      background-color: #ccc;
     }
+    background-color: #fff;
+    cursor: pointer;
   }
 }
