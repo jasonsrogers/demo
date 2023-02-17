@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StyledComponentsPageComponent } from './styled-components-page.component';
+import { StyledComponentsComponent } from './styled-components-page.component';
 
-describe('StyledComponentsPageComponent', () => {
-  let component: StyledComponentsPageComponent;
-  let fixture: ComponentFixture<StyledComponentsPageComponent>;
+describe('StyledComponentsComponent', () => {
+  let component: StyledComponentsComponent;
+  let fixture: ComponentFixture<StyledComponentsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [StyledComponentsPageComponent],
+      declarations: [StyledComponentsComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(StyledComponentsPageComponent);
+    fixture = TestBed.createComponent(StyledComponentsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

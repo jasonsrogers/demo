@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StyledComponentsPageComponent } from './styled-components-page/styled-components-page.component';
 
 const routes: Routes = [
   {
@@ -21,7 +20,15 @@ const routes: Routes = [
       (await import('@demo-app/web/ai/feature/ai-page'))
         .WebAiFeatureAiPageModule,
   },
-  { path: 'styled-components-page', component: StyledComponentsPageComponent },
+  {
+    path: 'styled-components-page',
+    loadChildren: async () =>
+      (
+        await import(
+          '@demo-app/web/styled-components/feature/styled-components-page'
+        )
+      ).WebStyledComponentsFeatureStyledComponentsPageModule,
+  },
   {
     path: 'hexagon-page',
     loadChildren: async () =>
