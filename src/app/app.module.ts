@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { SharedUiModule } from '@demo-app/shared/ui';
 import { MarkdownModule } from 'ngx-markdown';
-import { AiPageComponent } from './ai-page/ai-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ClocksPageComponent } from './clocks-page/clocks-page.component';
@@ -21,7 +20,6 @@ import { StyledComponentsPageComponent } from './styled-components-page/styled-c
     ImagesComponent,
     MenuItemHexComponent,
     ClocksPageComponent,
-    AiPageComponent,
     CybertruckButtonComponent,
     StyledComponentsPageComponent,
     HexagonPageComponent,

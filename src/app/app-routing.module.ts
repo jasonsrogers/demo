@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AiPageComponent } from './ai-page/ai-page.component';
 import { ClocksPageComponent } from './clocks-page/clocks-page.component';
 import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
 import { StyledComponentsPageComponent } from './styled-components-page/styled-components-page.component';
@@ -13,7 +12,12 @@ const routes: Routes = [
         .WebHomeFeatureHomePageModule,
   },
   { path: 'clocks-page', component: ClocksPageComponent },
-  { path: 'ai-page', component: AiPageComponent },
+  {
+    path: 'about-page',
+    loadChildren: async () =>
+      (await import('@demo-app/web/ai/feature/ai-page'))
+        .WebAiFeatureAiPageModule,
+  },
   { path: 'styled-components-page', component: StyledComponentsPageComponent },
   { path: 'hexagon-page', component: HexagonPageComponent },
   {
