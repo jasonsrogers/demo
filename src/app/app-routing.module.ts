@@ -26,6 +26,12 @@ const routes: Routes = [
       (await import('@demo-app/web/about/feature/about-page'))
         .WebAboutFeatureAboutPageModule,
   },
+  {
+    path: 'ai-page',
+    loadChildren: async () =>
+      (await import('@demo-app/web/ai/feature/ai-page'))
+        .WebAiFeatureAiPageModule,
+  },
   { path: '**', redirectTo: 'home-page' },
 ];
 
