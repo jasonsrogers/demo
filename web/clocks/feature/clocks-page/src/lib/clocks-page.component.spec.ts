@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClocksPageComponent } from './clocks-page.component';
+import { ClocksComponent } from './clocks-page.component';
 
-describe('ClocksPageComponent', () => {
-  let component: ClocksPageComponent;
-  let fixture: ComponentFixture<ClocksPageComponent>;
+describe('ClocksComponent', () => {
+  let component: ClocksComponent;
+  let fixture: ComponentFixture<ClocksComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ClocksPageComponent],
+      declarations: [ClocksComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ClocksPageComponent);
+    fixture = TestBed.createComponent(ClocksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
