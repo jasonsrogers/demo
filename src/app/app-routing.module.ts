@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutPageComponent } from './about-page/about-page.component';
 import { AiPageComponent } from './ai-page/ai-page.component';
 import { ClocksPageComponent } from './clocks-page/clocks-page.component';
 import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
@@ -17,7 +16,12 @@ const routes: Routes = [
   { path: 'ai-page', component: AiPageComponent },
   { path: 'styled-components-page', component: StyledComponentsPageComponent },
   { path: 'hexagon-page', component: HexagonPageComponent },
-  { path: 'about-page', component: AboutPageComponent },
+  {
+    path: 'about-page',
+    loadChildren: async () =>
+      (await import('@demo-app/web/about/feature/about-page'))
+        .WebAboutFeatureAboutPageModule,
+  },
   { path: '**', redirectTo: 'home-page' },
 ];
 

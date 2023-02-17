@@ -12,6 +12,9 @@
     "baseUrl": "./",
     "paths": {
       "@demo-app/shared/ui": ["shared/ui/src/index.ts"],
+      "@demo-app/web/about/feature/about-page": [
+        "web/about/feature/about-page/src/index.ts"
+      ],
       "@demo-app/web/home/feature/home-page": [
         "web/home/feature/home-page/src/index.ts"
       ]
