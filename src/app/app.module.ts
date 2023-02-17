@@ -7,7 +7,6 @@ import { MarkdownModule } from 'ngx-markdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button.component';
-import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
 import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
 import { StyledComponentsPageComponent } from './styled-components-page/styled-components-page.component';
 
@@ -17,7 +16,6 @@ import { StyledComponentsPageComponent } from './styled-components-page/styled-c
     MenuItemHexComponent,
     CybertruckButtonComponent,
     StyledComponentsPageComponent,
-    HexagonPageComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,8 +8,9 @@ describe('HexagonPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HexagonPageComponent],
-    }).compileComponents();
+      declarations: [ HexagonPageComponent ]
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(HexagonPageComponent);
     component = fixture.componentInstance;

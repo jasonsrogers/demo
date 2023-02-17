@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'demo-app-hexagon-page',
+  selector: 'app-hexagon-page',
   templateUrl: './hexagon-page.component.html',
-  styleUrls: ['./hexagon-page.component.scss'],
+  styleUrls: ['./hexagon-page.component.scss']
 })
-export class HexagonPageComponent {}
+export class HexagonPageComponent {
+
+}
