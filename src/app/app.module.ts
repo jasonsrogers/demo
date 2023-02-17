@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { ClocksPageComponent } from './clocks-page/clocks-page.component';
 import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button.component';
 import { HexagonPageComponent } from './hexagon-page/hexagon-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { ImagesComponent } from './images/images.component';
 import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
 import { StyledComponentsPageComponent } from './styled-components-page/styled-components-page.component';
@@ -22,7 +21,6 @@ import { StyledComponentsPageComponent } from './styled-components-page/styled-c
     AppComponent,
     ImagesComponent,
     MenuItemHexComponent,
-    HomePageComponent,
     ClocksPageComponent,
     AiPageComponent,
     CybertruckButtonComponent,
