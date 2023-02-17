@@ -27,6 +27,9 @@
       "@demo-app/web/home/feature/home-page": [
         "web/home/feature/home-page/src/index.ts"
       ],
+      "@demo-app/web/shell/feature/web-shell": [
+        "web/shell/feature/web-shell/src/index.ts"
+      ],
       "@demo-app/web/styled-components/feature/styled-components-page": [
         "web/styled-components/feature/styled-components-page/src/index.ts"
       ]

@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Route } from '@angular/router';
 
-const routes: Routes = [
+export const webShellRoutes: Route[] = [
   {
     path: 'home-page',
     loadChildren: async () =>
@@ -49,9 +48,3 @@ const routes: Routes = [
   },
   { path: '**', redirectTo: 'home-page' },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedUiModule } from '@demo-app/shared/ui';
 import { MarkdownModule } from 'ngx-markdown';
-import { AppRoutingModule } from './app-routing.module';
+import { WebShellModule } from 'web/shell/feature/web-shell/src/lib/web-shell.module';
 import { AppComponent } from './app.component';
 import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
 
@@ -12,7 +12,7 @@ import { MenuItemHexComponent } from './menu-item-hex/menu-item-hex.component';
   declarations: [AppComponent, MenuItemHexComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    WebShellModule,
     CommonModule,
     SharedUiModule,
     MarkdownModule.forRoot(),
