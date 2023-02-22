@@ -8,16 +8,16 @@ export const webShellRoutes: Route[] = [
         .WebHomeFeatureHomePageModule,
   },
   {
+    path: 'about-page',
+    loadChildren: async () =>
+      (await import('@demo-app/web/about/feature/about-page'))
+        .WebAboutFeatureAboutPageModule,
+  },
+  {
     path: 'clocks-page',
     loadChildren: async () =>
       (await import('@demo-app/web/clocks/feature/clocks-page'))
         .WebClocksFeatureClocksPageModule,
-  },
-  {
-    path: 'about-page',
-    loadChildren: async () =>
-      (await import('@demo-app/web/ai/feature/ai-page'))
-        .WebAiFeatureAiPageModule,
   },
   {
     path: 'styled-components-page',
@@ -33,12 +33,6 @@ export const webShellRoutes: Route[] = [
     loadChildren: async () =>
       (await import('@demo-app/web/hexagon/feature/hexagon-page'))
         .WebHexagonFeatureHexagonPageModule,
-  },
-  {
-    path: 'about-page',
-    loadChildren: async () =>
-      (await import('@demo-app/web/about/feature/about-page'))
-        .WebAboutFeatureAboutPageModule,
   },
   {
     path: 'ai-page',

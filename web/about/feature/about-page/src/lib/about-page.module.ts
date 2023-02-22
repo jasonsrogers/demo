@@ -17,6 +17,7 @@ import { AboutPageComponent } from './about-page.component';
       },
     ]),
   ],
+  exports: [AboutPageComponent],
   declarations: [AboutPageComponent],
 })
 export class WebAboutFeatureAboutPageModule {}

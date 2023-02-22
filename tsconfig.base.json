@@ -15,17 +15,17 @@
       "@demo-app/web/about/feature/about-page": [
         "web/about/feature/about-page/src/index.ts"
       ],
-      "@demo-app/web/ai/feature/ai-page": [
-        "web/ai/feature/ai-page/src/index.ts"
+      "@demo-app/web/home/feature/home-page": [
+        "web/home/feature/home-page/src/index.ts"
       ],
       "@demo-app/web/clocks/feature/clocks-page": [
         "web/clocks/feature/clocks-page/src/index.ts"
       ],
+      "@demo-app/web/ai/feature/ai-page": [
+        "web/ai/feature/ai-page/src/index.ts"
+      ],
       "@demo-app/web/hexagon/feature/hexagon-page": [
         "web/hexagon/feature/hexagon-page/src/index.ts"
-      ],
-      "@demo-app/web/home/feature/home-page": [
-        "web/home/feature/home-page/src/index.ts"
       ],
       "@demo-app/web/shell/feature/web-shell": [
         "web/shell/feature/web-shell/src/index.ts"
