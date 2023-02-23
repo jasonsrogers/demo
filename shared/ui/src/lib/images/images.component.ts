@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 
+export type Image = {
+  name: string;
+  url: string;
+  thumbnailUrl: string;
+};
+
 @Component({
   selector: 'app-images',
   templateUrl: './images.component.html',
   styleUrls: ['./images.component.scss'],
 })
 export class ImagesComponent {
-  public images = [
+  public images: Image[] = [
     {
       name: 'image1',
       url: 'assets/image1.png',
@@ -135,4 +141,16 @@ export class ImagesComponent {
       images: this.images,
     },
   ];
+
+  public selectedImage: Image | undefined = undefined;
+
+  openModal(image: Image): void {
+    this.selectedImage = image;
+    // document.getElementById('modal-image').src = image.url;
+    // document.getElementById('modal').style.display = 'block';
+  }
+
+  closeModal(): void {
+    this.selectedImage = undefined;
+  }
 }
