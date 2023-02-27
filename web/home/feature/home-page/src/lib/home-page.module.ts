@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { SharedUiModule } from '@demo-app/shared/ui';
 import { HomePageComponent } from './home-page.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { HomePageComponent } from './home-page.component';
         component: HomePageComponent,
       },
     ]),
+    SharedUiModule,
   ],
   exports: [HomePageComponent],
   declarations: [HomePageComponent],

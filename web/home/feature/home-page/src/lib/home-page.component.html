@@ -1,58 +1,60 @@
-<p>home-page works!</p>
-<h1 class="tw-text-3xl tw-font-bold tw-underline">Hello world!</h1>
+<app-page>
+  <p>home-page works!</p>
+  <h1 class="tw-text-3xl tw-font-bold tw-underline">Hello world!</h1>
 
-<button class="btn">Hello</button>
+  <button class="btn">Hello</button>
 
-<h2>Under construction</h2>
-<p>
-  This is a demo/sandbox website with random things that I wanted to build or
-  test or showcase
-</p>
-<p>It doesn't have much of a purpose for now</p>
-<p>Sections:</p>
-<ul>
-  <a [routerLink]="['/', 'home-page']"><li>Home</li></a>
-  <a [routerLink]="['/', 'clocks-page']"><li>Clocks</li></a>
-  <a [routerLink]="['/', 'ai-page']"><li>AI generated</li></a>
+  <h2>Under construction</h2>
+  <p>
+    This is a demo/sandbox website with random things that I wanted to build or
+    test or showcase
+  </p>
+  <p>It doesn't have much of a purpose for now</p>
+  <p>Sections:</p>
+  <ul>
+    <a [routerLink]="['/', 'home-page']"><li>Home</li></a>
+    <a [routerLink]="['/', 'clocks-page']"><li>Clocks</li></a>
+    <a [routerLink]="['/', 'ai-page']"><li>AI generated</li></a>
 
-  <a [routerLink]="['/', 'styled-components-page']"
-    ><li>Styled components</li></a
+    <a [routerLink]="['/', 'styled-components-page']"
+      ><li>Styled components</li></a
+    >
+
+    <a [routerLink]="['/', 'hexagon-page']"><li>Hexagon</li></a>
+    <a [routerLink]="['/', 'about-page']"><li>About</li></a>
+  </ul>
+  <h2>To do:</h2>
+  <ul>
+    <li>Add markup</li>
+    <li>Fix breakpoint</li>
+    <li>Convert scss to tailwind</li>
+    <li>Adding Auth0</li>
+    <li>Make content modular (nx ?)</li>
+    <li>Code examples to show how it's done</li>
+  </ul>
+
+  <h2>Tech stack</h2>
+  <ul>
+    <li>Angular 15</li>
+    <li>tailwind css</li>
+    <li>Nx</li>
+  </ul>
+
+  <p>Note: don't have much time to spare for this, so it may take a while</p>
+
+  <!-- <div
+    class="badge-base LI-profile-badge"
+    data-locale="en_US"
+    data-size="medium"
+    data-theme="light"
+    data-type="VERTICAL"
+    data-vanity="jason-s-rogers"
+    data-version="v1"
   >
-
-  <a [routerLink]="['/', 'hexagon-page']"><li>Hexagon</li></a>
-  <a [routerLink]="['/', 'about-page']"><li>About</li></a>
-</ul>
-<h2>To do:</h2>
-<ul>
-  <li>Add markup</li>
-  <li>Fix breakpoint</li>
-  <li>Convert scss to tailwind</li>
-  <li>Adding Auth0</li>
-  <li>Make content modular (nx ?)</li>
-  <li>Code examples to show how it's done</li>
-</ul>
-
-<h2>Tech stack</h2>
-<ul>
-  <li>Angular 15</li>
-  <li>tailwind css</li>
-  <li>Nx</li>
-</ul>
-
-<p>Note: don't have much time to spare for this, so it may take a while</p>
-
-<!-- <div
-  class="badge-base LI-profile-badge"
-  data-locale="en_US"
-  data-size="medium"
-  data-theme="light"
-  data-type="VERTICAL"
-  data-vanity="jason-s-rogers"
-  data-version="v1"
->
-  <a
-    class="badge-base__link LI-simple-link"
-    href="https://nl.linkedin.com/in/jason-s-rogers?trk=profile-badge"
-    >Jason Rogers</a
-  >
-</div> -->
+    <a
+      class="badge-base__link LI-simple-link"
+      href="https://nl.linkedin.com/in/jason-s-rogers?trk=profile-badge"
+      >Jason Rogers</a
+    >
+  </div> -->
+</app-page>
