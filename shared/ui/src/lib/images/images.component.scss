@@ -2,6 +2,7 @@
   max-width: 300px;
   border-radius: 40px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .image-gallery-container {
@@ -18,13 +19,17 @@
 }
 
 .gallery img {
-  max-width: 100%;
+  max-width: 90%;
+  max-height: 90%;
   height: auto;
   cursor: pointer;
 }
 
 .modal {
-  display: 'block';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: fixed;
   z-index: 1;
   top: 0;

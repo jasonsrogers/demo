@@ -6,6 +6,7 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { ImagesComponent } from './images/images.component';
 import { MenuComponent } from './menu/menu.component';
 import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button.component';
+import { AppPageComponent } from './app-page/app-page.component';
 
 @NgModule({
   imports: [CommonModule, RouterModule],
@@ -15,6 +16,7 @@ import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button
     AppHeaderComponent,
     ImagesComponent,
     CybertruckButtonComponent,
+    AppPageComponent,
   ],
   exports: [
     MenuComponent,
@@ -22,6 +24,7 @@ import { CybertruckButtonComponent } from './cybertruck-button/cybertruck-button
     AppHeaderComponent,
     ImagesComponent,
     CybertruckButtonComponent,
+    AppPageComponent,
   ],
 })
 export class SharedUiModule {}

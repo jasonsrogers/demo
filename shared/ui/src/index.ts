@@ -5,3 +5,5 @@ export * from './lib/menu/menu.component';
 export * from './lib/app-header/app-header.component';
 
 export * from './lib/cybertruck-button/cybertruck-button.component';
+
+export * from './lib/app-page/app-page.component';

@@ -1,7 +1,7 @@
 <div *ngFor="let category of categories">
   <h2>{{ category.title }}</h2>
   <div
-    class="image-gallery-container tw-grid tw-gap-4 tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4"
+    class="tw-grid tw-gap-4 tw-grid-cols-2 md:tw-grid-cols-3 lg:tw-grid-cols-4"
   >
     <div class="image-tile" *ngFor="let image of category.images">
       <a (click)="openModal(image)"
@@ -10,7 +10,7 @@
     </div>
   </div>
 </div>
-<div *ngIf="selectedImage" class="modal">
+<div *ngIf="selectedImage" class="modal" (click)="closeModal()">
   <span class="close" (click)="closeModal()">&times;</span>
   <img id="modal-image" [src]="selectedImage.url" alt="Full-size Image" />
 </div>
