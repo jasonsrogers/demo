@@ -164,7 +164,8 @@ markdown.splendor {
 
   p,
   *:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
-    margin: 1rem auto 1rem;
+    // margin: 1rem auto 1rem;
+    margin: 1rem 0 1rem;
     max-width: 36rem;
     padding: 0.25rem;
   }

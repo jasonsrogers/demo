@@ -1,25 +1,11 @@
-:host {
-  @apply tw-p-5;
-  @apply tw-block;
-}
+.card {
+  padding: 30px;
+  border: 1px solid #777;
+  border-radius: 5px;
 
-.btn {
-  @apply tw-py-2 tw-px-4 tw-border tw-border-transparent tw-shadow-sm tw-text-sm tw-font-medium tw-rounded-md tw-text-white tw-bg-red-400;
-}
-
-ul {
-  li {
-    padding: 5px 20px;
-    margin: 5px;
-    border: 1px solid #777;
-    border-radius: 5px;
-    background-color: #999;
+  &:hover {
+    background-color: #ccc;
   }
-  a li {
-    &:hover {
-      background-color: #ccc;
-    }
-    background-color: #fff;
-    cursor: pointer;
-  }
+  background-color: #fff;
+  text-align: center;
 }
