@@ -7,7 +7,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "test"],
+        "cacheableOperations": ["build", "test", "build-storybook"],
         "accessToken": "M2I1MDExMjktYzRiMS00YWE0LWI3YzMtNGJkMmIzOGM5ZGEyfHJlYWQtd3JpdGU="
       }
     }
@@ -22,7 +22,9 @@
       "!{projectRoot}/karma.conf.js",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/.eslintrc.json"
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/.storybook/**/*",
+      "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)"
     ]
   },
   "targetDefaults": {
@@ -40,6 +42,17 @@
     },
     "lint": {
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+    },
+    "build-storybook": {
+      "inputs": [
+        "default",
+        "^production",
+        "{workspaceRoot}/.storybook/**/*",
+        "!{projectRoot}/.storybook/**/*"
+      ]
+    },
+    "e2e": {
+      "inputs": ["default", "^production"]
     }
   },
   "generators": {

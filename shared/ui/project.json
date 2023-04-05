@@ -41,6 +41,47 @@
       "options": {
         "lintFilePatterns": ["shared/ui/**/*.ts", "shared/ui/**/*.html"]
       }
+    },
+    "storybook": {
+      "executor": "@storybook/angular:start-storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "shared/ui/.storybook",
+        "browserTarget": "shared-ui:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@storybook/angular:build-storybook",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/shared-ui",
+        "configDir": "shared/ui/.storybook",
+        "browserTarget": "shared-ui:build-storybook",
+        "compodoc": false
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "static-storybook": {
+      "executor": "@nrwl/web:file-server",
+      "options": {
+        "buildTarget": "shared-ui:build-storybook",
+        "staticFilePath": "dist/storybook/shared-ui"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "shared-ui:build-storybook:ci"
+        }
+      }
     }
   },
   "tags": []
