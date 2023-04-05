@@ -12,7 +12,7 @@ module.exports = {
         serif: ['IBM Plex Serif', ...defaultTheme.fontFamily.serif],
       },
       colors: {
-        gray: colors.blueGray,
+        gray: colors.slate,
         teal: colors.teal,
       },
     },
